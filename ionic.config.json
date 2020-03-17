@@ -1,0 +1,7 @@
+{
+  "name": "myapp5",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
