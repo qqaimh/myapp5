@@ -12,6 +12,16 @@
       <ion-title size="large">Tab 3</ion-title>
     </ion-toolbar>
   </ion-header>
+  <div class="ion-padding">
+    <p> Network Status: {{status | json}} </p>
+  </div>
+  <ion-button color="secondary" (click)="gopromise()">Secondary</ion-button>
+  <ion-button color="secondary" (click)="gofunc()">Secondary</ion-button>
+  <ion-button color="secondary" (click)="openBrowser()">URL</ion-button>
+  <ion-button color="secondary" (click)="openKeyboard()">Keyboard--open</ion-button>
+  <ion-button color="secondary" (click)="openModalAlert()">Modals--Alert</ion-button>
+  <ion-button color="secondary" (click)="showConfirm()">Modals--showConfirm</ion-button>
+  <ion-button color="secondary" (click)="showPrompt()">Modals--showPrompt</ion-button>
+  <ion-button color="secondary" (click)="showActions()">Modals--showActions</ion-button>
 
-  <app-explore-container name="Tab 3 page"></app-explore-container>
 </ion-content>

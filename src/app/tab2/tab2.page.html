@@ -6,12 +6,20 @@
   </ion-toolbar>
 </ion-header>
 
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Tab 2</ion-title>
-    </ion-toolbar>
-  </ion-header>
-
-  <app-explore-container name="Tab 2 page"></app-explore-container>
+<ion-content>
+  <div class="ion-padding">
+    <p> Network Status: {{status | json}} </p>
+  </div>
+  <div class="ion-padding">
+    <p> Network Status: {{newstatus | json}} </p>
+  </div>
+  <ion-button color="secondary" (click)="changejson()">改变json</ion-button>
+  <ion-button color="secondary" (click)="share()">分享</ion-button>
+  <ion-button color="secondary" (click)="showStatusBar()">showStatusBar</ion-button>
+  <ion-button color="secondary" (click)="hideStatusBar()">hideStatusBar</ion-button>
+  <ion-button color="secondary" (click)="changeStatusBar()">changeStatusBar</ion-button>
+  <ion-button color="secondary" (click)="showToast()">showToast</ion-button>
+  <ion-button color="secondary" (click)="isVoiceOverEnabled()">isVoiceOverEnabled</ion-button>
+  <ion-button color="secondary" (click)="speak()">speak</ion-button>
+  <ion-button color="secondary" (click)="dingshi()">Loacl Push</ion-button>
 </ion-content>
